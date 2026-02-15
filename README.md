@@ -1,5 +1,5 @@
 <p align="center">
-<img src="javascript-logo-removebg.png" alt="logo-javascript" width="120" />
+<img src="javascript-logo.jpg" alt="logo-javascript" width="120" />
 </p>
 
 # Absensi JavaScript
