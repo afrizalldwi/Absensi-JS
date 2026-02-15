@@ -1,0 +1,15 @@
+* {
+  font-family: Poppins;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: hsl(221, 65%, 53%);
+  color: white;
+}

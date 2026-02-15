@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absensi</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-200">
+    <header
+      class="container mx-auto w-full bg-blue-900 text-white mt-14 p-6 rounded-t-md"
+    >
+      <div class="flex justify-between items-center">
+        <div class="justify-center items-center">
+          <a
+            href="index.html"
+            class="text-xl font-semibold hover:text-gray-200 duration-300"
+            >App Absensi</a
+          >
+        </div>
+        <div class="justify-center items-center">
+          <nav>
+            <ul class="flex gap-4 font-semibold">
+              <li>
+                <a href="index.html" class="hover:text-gray-200 duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="data.html" class="hover:text-gray-200 duration-300"
+                  >Data Absensi</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container bg-white mx-auto min-h-full p-6 rounded-b-md">
+      <a
+        href="index.html"
+        class="bg-blue-900 text-white rounded-md px-4 py-2 hover:bg-blue-900/85 active:bg-blue-900/75 duration-300"
+        >Back</a
+      >
+      <h1 class="font-bold text-2xl mt-4">Data Absensi</h1>
+
+      <div class="flex justify-center items-center">
+        <table class="w-full mt-5 border-collapse">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama</th>
+              <th>Kelas</th>
+              <th>Status</th>
+              <th>Tanggal</th>
+              <th>Jam</th>
+            </tr>
+          </thead>
+          <tbody id="data-absensi"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="data.js"></script>
+  </body>
+</html>

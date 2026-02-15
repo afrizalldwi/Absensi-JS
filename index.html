@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absensi</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-200">
+    <header
+      class="container mx-auto w-full bg-blue-900 text-white mt-14 p-6 rounded-t-md"
+    >
+      <div class="flex justify-between items-center">
+        <div class="justify-center items-center">
+          <a
+            href="index.html"
+            class="text-xl font-semibold hover:text-gray-200 duration-300"
+            >App Absensi</a
+          >
+        </div>
+        <div class="justify-center items-center">
+          <nav>
+            <ul class="flex gap-4 font-semibold">
+              <li>
+                <a href="index.html" class="hover:text-gray-200 duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="data.html" class="hover:text-gray-200 duration-300"
+                  >Data Absensi</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container bg-white mx-auto min-h-full p-6 rounded-b-md">
+      <h1 class="font-bold text-2xl">Form Absensi</h1>
+      <form class="mt-5" id="form-absensi">
+        <div class="flex flex-col items-center justify-center">
+          <div>
+            <label class="block text-xl font-semibold mb-2">Nama</label>
+            <input
+              type="text"
+              id="nama"
+              placeholder="Masukkan Nama Anda..."
+              class="min-w-7xl border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2"
+            />
+          </div>
+          <div>
+            <label class="block text-xl font-semibold mb-2">Kelas</label>
+            <input
+              type="text"
+              id="kelas"
+              placeholder="Masukkan Kelas Anda..."
+              class="min-w-7xl border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2"
+            />
+          </div>
+          <div>
+            <label class="block text-xl font-semibold mb-2">Status</label>
+            <select
+              id="status"
+              class="min-w-7xl border border-gray-300 rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="">-- Pilih --</option>
+              <option value="hadir">Hadir</option>
+              <option value="sakit">Sakit</option>
+              <option value="izin">Izin</option>
+            </select>
+          </div>
+
+          <button
+            type="submit"
+            class="mt-4 bg-blue-900 rounded-md text-white font-semibold px-8 py-4 cursor-pointer hover:bg-blue-900/85 active:bg-blue-900/75 duration-300"
+          >
+            Absen
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <script src="absensi.js"></script>
+  </body>
+</html>
