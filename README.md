@@ -1,6 +1,6 @@
 # Absensi JavaScript
 
-Ini adalah App Absensi sederhana yang dibuat menggunakan JavaScript, HTML, dan CSS
+Ini adalah App Absensi sederhana yang dibuat menggunakan JavaScript
 
 ## Clone
 
